@@ -13,7 +13,7 @@ class App {
     const image = new ImageComponent('Image Title', 'https://picsum.photos/600/300');
     image.attachTo(appRoot, 'beforeend');
 
-    const video = new VideoComponent('Video Title', 'https://youtu.be/96AbEMeR1aE');
+    const video = new VideoComponent('Video Title', 'https://www.youtube.com/embed/96AbEMeR1aE');
     video.attachTo(appRoot, 'beforeend');
 
     const note = new NoteComponent('Note title', 'Note body');
