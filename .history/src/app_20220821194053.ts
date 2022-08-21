@@ -1,4 +1,4 @@
-import { ImageComponent } from './components/page/item/image.js';
+import { ImageComponent } from './../.history/src/components/page/item/image_20220821193235';
 import { PageComponent } from './components/page/page.js';
 
 class App {
@@ -13,4 +13,3 @@ class App {
 }
 
 new App(document.querySelector('.document')! as HTMLElement);
-
