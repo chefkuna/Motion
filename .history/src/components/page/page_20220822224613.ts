@@ -16,7 +16,7 @@ class PageItemComponent extends BaseComponent<HTMLElement> implements Composable
       </div>
     </li>`);
     const closeBtn = this.element.querySelector('.close')! as HTMLButtonElement;
-    closeBtn.onclick = () => {
+    closeBtn.onClick = () => {
       this.closeListener && this.closeListener();
     };
   }

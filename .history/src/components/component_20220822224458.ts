@@ -1,6 +1,6 @@
 export interface Component {
   attachTo(parent: HTMLElement, position?: InsertPosition): void;
-  removeFrom(parent: HTMLElement):void ;
+  removeFrom(parent: HTMLElement);
 }
 /**
  * Encapsulate the HTML element creation
