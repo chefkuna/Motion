@@ -15,13 +15,13 @@ class App {
     this.page.addChild(image);
 
     const video = new VideoComponent('Video Title', 'https://youtu.be/96AbEMeR1aE');
-    this.page.addChild(video);
+    video.attachTo(appRoot, 'beforeend');
 
     const note = new NoteComponent('Note title', 'Note body');
-    this.page.addChild(note);
+    note.attachTo(appRoot, 'beforeend');
 
     const todo = new TodoComponent('Todo title', 'Todo item');
-    this.page.addChild(todo);
+    todo.attachTo(appRoot, 'beforeend');
   }
 }
 

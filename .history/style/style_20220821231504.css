@@ -84,7 +84,7 @@ body {
 }
 
 .document::-webkit-scrollbar-thumb {
-  background-color: var(--text-edit-bg-color);
+  background-color: var(--accent-color);
 }
 
 .footer {

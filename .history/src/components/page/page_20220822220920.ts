@@ -1,10 +1,6 @@
 import { BaseComponent, Component } from './../component.js';
 
-export interface Composable {
-  addChild(child: Component): void;
-}
-
-class PageItemComponent extends BaseComponent<HTMLElement> implements Composable {
+class PageItemComponent extends BaseComponent<HTMLElement> {
   constructor() {
     super(`
     <li class="page-item">
@@ -20,13 +16,8 @@ class PageItemComponent extends BaseComponent<HTMLElement> implements Composable
   }
 }
 
-export class PageComponent extends BaseComponent<HTMLUListElement> implements Composable {
+export class PageComponent extends BaseComponent<HTMLUListElement> {
   constructor() {
-    super('<ul class="page"></ul>');
-  }
-  addChild(section: Component) {
-    const item = new PageItemComponent();
-    item.addChild(section);
-    item.attachTo(this.element, 'beforeend');
+    super('<ul class="page">This is PageComponent!</ul>');
   }
 }

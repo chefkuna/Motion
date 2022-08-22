@@ -79,7 +79,7 @@ body {
 }
 
 .document::-webkit-scrollbar {
-  background-color: var(--smokywhite);
+  background-color: var(--bg-accent-color);
   width: 6px;
 }
 

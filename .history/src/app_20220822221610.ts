@@ -18,10 +18,10 @@ class App {
     this.page.addChild(video);
 
     const note = new NoteComponent('Note title', 'Note body');
-    this.page.addChild(note);
+    note.attachTo(appRoot, 'beforeend');
 
     const todo = new TodoComponent('Todo title', 'Todo item');
-    this.page.addChild(todo);
+    todo.attachTo(appRoot, 'beforeend');
   }
 }
 

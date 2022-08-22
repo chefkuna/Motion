@@ -28,7 +28,6 @@ export class VideoComponent extends BaseComponent<HTMLElement> {
     }
     return url;
   }
-}
 
 //input
 //https://youtu.be/96AbEMeR1aE

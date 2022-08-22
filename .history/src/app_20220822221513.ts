@@ -13,15 +13,16 @@ class App {
 
     const image = new ImageComponent('Image Title', 'https://picsum.photos/600/300');
     this.page.addChild(image);
+    image.attachTo(appRoot, 'beforeend');
 
     const video = new VideoComponent('Video Title', 'https://youtu.be/96AbEMeR1aE');
-    this.page.addChild(video);
+    video.attachTo(appRoot, 'beforeend');
 
     const note = new NoteComponent('Note title', 'Note body');
-    this.page.addChild(note);
+    note.attachTo(appRoot, 'beforeend');
 
     const todo = new TodoComponent('Todo title', 'Todo item');
-    this.page.addChild(todo);
+    todo.attachTo(appRoot, 'beforeend');
   }
 }
 
