@@ -14,7 +14,7 @@ type SectionContainerConstructor = {
   new (): SectionContainer;
 }
 
-export class PageItemComponent extends BaseComponent<HTMLElement> implements SectionContainer {
+class PageItemComponent extends BaseComponent<HTMLElement> implements SectionContainer {
   private closeListener?: OnCloseListener;
   constructor() {
     super(`

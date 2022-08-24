@@ -10,11 +10,7 @@ interface SectionContainer extends Component, Composable {
   setOnCloseListener(listener: OnCloseListener): void;
 }
 
-type SectionContainerConstructor = {
-  new (): SectionContainer;
-}
-
-export class PageItemComponent extends BaseComponent<HTMLElement> implements SectionContainer {
+class PageItemComponent extends BaseComponent<HTMLElement> implements SectionContainer {
   private closeListener?: OnCloseListener;
   constructor() {
     super(`
@@ -43,7 +39,7 @@ export class PageComponent extends BaseComponent<HTMLUListElement> implements Co
     super('<ul class="page"></ul>');
   }
   addChild(section: Component) {
-    const item = new this.pageItemConstructor();
+    const item = new PageItemComponent();
     item.addChild(section);
     item.attachTo(this.element, 'beforeend');
     item.setOnCloseListener(() => {
